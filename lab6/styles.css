@@ -1,0 +1,9 @@
+body {font-family: 'Trebuchet MS', sans-serif;
+color: darkcyan;
+}
+h1, h2 {color: darkcyan;}
+.evenrow {color: maroon;
+background-color: burlywood;
+}
+h1 {font-size: 2em;}
+h2 {font-size: 1.5em;}
