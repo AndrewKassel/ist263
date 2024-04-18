@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Technical Skills</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <style>
+        th, td {border: 1px solid black;}
+            .skip {
+            background-color: #8a2be2;
+            padding: 8px;
+            border: 2px solid black;
+            text-decoration: none;
+            position: absolute; /* positions are relative to top and bottom of viewport */
+            top: 10px;
+            left: -999px; /* push the button offscreen */
+        }
+        .skip:focus {/* when the button is tabbed to */
+            left: 10px; 
+        }
+        </style>
+    </head>
+    <body>
+        <a href="#skip" class="skip">Skip to Content</a><br>
+        <nav>
+            <a href="index.html">Home</a> <span>|</span>
+            <a href="skills.html">Skills</a> <span>|</span>
+            <a href="contact.html">Contact</a>
+        </nav>
+            <h1 class="skills" id="skip">Skills</h1>
+            <p class="intro">From my experiences in different kinds of jobs and schooling, I have developed skills that assist me in life, as well as my career. The examples below are some <br>of the skills I have developed in my life so far.</p>
+            <!-- <table>
+            <caption>Technical Skills</caption>
+            <tr>
+                <th>Skill</th>
+                <th>Learned from...</th>
+                <th>Experience</th>
+            </tr>
+            <tr class="evenrow">
+                <td>Communication</td>
+                <td>School/Work</td>
+                <td>Experienced</td>
+            </tr>
+            <tr>
+                <td>Project Management</td>
+                <td>School</td>
+                <td>Moderate</td>
+            </tr>
+            <tr class="evenrow">
+                <td>Adobe Illustrator</td>
+                <td>School</td>
+                <td>Moderate</td>
+            </tr>
+            <tr>
+                <td>Adobe Photoshop</td>
+                <td>School</td>
+                <td>Moderate</td>
+            </tr>
+            <tr class="evenrow">
+                <td>Customer Service</td>
+                <td>Work</td>
+                <td>Experienced</td>
+            </tr>
+            <tr>
+                <td>Public Relations</td>
+                <td>Work</td>
+                <td>Experienced</td>
+            </tr>
+            <tr class="evenrow">
+                <td>Community Service</td>
+                <td>School</td>
+                <td>Moderate</td>
+            </tr>
+            <tr>
+                <td>Event Planning</td>
+                <td>School/Work</td>
+                <td>Moderate</td>
+            </tr>
+            <tr class="evenrow">
+                <td>Event Management</td>
+                <td>School/Work</td>
+                <td>Moderate</td>
+            </tr>
+            <tr>
+                <td>Product Development</td>
+                <td>School</td>
+                <td>Beginner</td>
+            </tr>
+        </table><br> -->
+        <div class="flexbox2">
+            <div class="skillslist">
+                <div class="img1"><img src="../images/comms.svg" alt="communication"><br>Text bubbles icon</div>
+                <div class="img2"><img src="../images/pubrel.svg" alt="public relations"><br>Smiley face</div>
+                <div class="img3"><img src="../images/customer.svg" alt="customer service"><br>Text bubble with three dots</div>
+                <div class="img4"><img src="../images/project.svg" alt="project management"><br>Bullet list icon</div>
+                <div class="img5"><img src="../images/event.svg" alt="event planning"><br>Calendar icon</div>
+            </div>
+            <div class="otherskills">
+                <h2>Other Skills</h2>
+                <div>Event Management</div>
+                <div>Adobe Photoshop</div>
+                <div>Adobe Illustrator</div>
+                <div>HTML</div>
+                <div>CSS</div>
+            </div>
+        </div>
+    </body>
+</html>
