@@ -4,6 +4,12 @@ body {
     font-family: 'Courier New', Courier, monospace;
     max-width: 100%;
 }
+h1 {
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
 .navigation {
     display: flex;
     background-color: #f4ddd8;
