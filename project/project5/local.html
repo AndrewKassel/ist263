@@ -9,19 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700&display=swap" rel="stylesheet">
-    <script>
-        const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                if(entry.isIntersecting){
-                    document.querySelectorAll(".fadein")[1].classList.add("fadeIn");
-                }
-            })
-        })
-        
-    </script>
-    <a href="#main" class="skip" tabindex="1">Skip to Content</a><br>
-</head>
-<body>
+
     <nav class="navigation">
         <div class="obx">OBX</div>
         <a href="index.html" class="home" tabindex="1">Home</a>
@@ -35,6 +23,22 @@
         <a href="local.html" tabindex="3">Local Spots<br> and Specialties</a>
         <a href="nomoney.html" tabindex="4">No Money?<br> No Problem</a>
     </nav>
+    
+    <script>
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if(entry.isIntersecting){
+                    document.querySelectorAll(".fadein")[1].classList.add("fadeIn");
+                }
+            })
+        })
+        
+    </script>
+    <a href="#main" class="skip" tabindex="1">Skip to Content</a><br>
+
+</head>
+
+<body>
 
     <div class="localcuisine fadein" id="main">
         <h1>Local Cuisine</h1>
