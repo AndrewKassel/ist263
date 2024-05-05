@@ -9,13 +9,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700&display=swap" rel="stylesheet">
+    <script>
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+             if(entry.isIntersecting){
+                   document.querySelectorAll(".fadein")[1].classList.add("fadeIn");
+                }
+         })
+        })
+    
+    </script>
+    <a href="#main" class="skip" tabindex="1">Skip to Content</a><br>
 </head>
 <body>
     <nav class="navigation">
         <div class="obx">OBX</div>
-        <a href="index.html" class="home">Home</a>
-        <a href="local.html">Local Spots<br> and Specialties</a>
-        <a href="nomoney.html">No Money?<br> No Problem</a>
+        <a href="index.html" class="home" tabindex="2">Home</a>
+        <a href="local.html" tabindex="3">Local Spots<br> and Specialties</a>
+        <a href="nomoney.html" tabindex="4">No Money?<br> No Problem</a>
     </nav>
     
     <nav class="navsmall">
@@ -25,23 +36,23 @@
         <a href="nomoney.html">No Money?<br> No Problem</a>
     </nav>
 
-    <div class="tobxnc">
+    <article class="tobxnc fadein" id="main">
         <h1>The Outer Banks, North Carolina</h1>
         <p>
             If you have never heard of the Outer Banks, North Carolina, you’re missing out on a locaton full of beaches, history, and great tmes. OBX, as some people call it, is located on the eastern shoreline of North Carolina, and is home to great restaurants, relaxing beaches, and amazing people.
         </p>
-    </div>
+    </article>
 
-    <div class="tobxncsmall">
+    <article class="tobxncsmall fadein">
         <h1>The Outer Banks, North Carolina</h1>
         <p>
             If you have never heard of the Outer Banks, North Carolina, you’re missing out on a locaton full of beaches, history, and great tmes. OBX, as some people call it, is located on the eastern shoreline of North Carolina, and is home to great restaurants, relaxing beaches, and amazing people.
         </p>
-    </div>
+    </article>
     
-    <img src="../media/obxpier.jpeg" alt="OBX Pier" class="pier">
+    <img src="../media/obxpier.jpeg" alt="Pier leading from the beach to the ocean with a sunset in the background" class="pier fadein2">
 
-    <img src="../media/obxpiersmall.jpg" alt="OBX Pier" class="piersmall">
+    <img src="../media/obxpiersmall.jpg" alt="Pier leading from the beach to the ocean with a sunset in the background" class="piersmall fadein2">
 
     <div class="sidebyside">
         <div class="sidetext">
@@ -51,18 +62,18 @@
             </p>
         </div>
         <div class="sideimage">
-            <img src="../media/sky.jpg" alt="OBX Sky" class="sky">
+            <img src="../media/sky.jpg" alt="A lake surrounded by houses and grass reflecting a very colorful sunset in the sky " class="sky fadein">
         </div>
     </div>
 
-        <div class="sidetextsmall">
+        <div class="sidetextsmall fadein3">
             <h1>Why You Should Visit</h1>
             <p>
                The Outer Banks would be most enjoyed by families and people who like to go to the beach to relax and take it easy. Some places in OBX are more laid-back than others, with each town having their own specialty. Duck has unique shops, incredible food, and the most activity since that’s where everyone enters the island. Corolla, which is north of Duck, has a different feel, with more nature and even a 4x4 secton where you can drive on the beach and see wildlife roaming around. Kity Hawk is south of Duck, and consists of some great history, like where the first plane was flown. So, no matter where you are in OBX, there is something unique to experience. Did I menton that there is only one main road on the thin island? So don’t worry about getting lost, its only north or south!
             </p>
         </div>
         <div class="sideimagesmall">
-            <img src="../media/skysmall.jpg" alt="OBX Sky" class="sky">
+            <img src="../media/skysmall.jpg" alt="A lake surrounded by houses and grass reflecting a very colorful sunset in the sky" class="sky">
         </div>
 
     <h1 class="major">Major Areas of Exploration in OBX</h1>
@@ -82,7 +93,7 @@
             </p>
         </div>
         <div class="sideimage2">
-            <img src="../media/lighthouse.jpg" alt="Lighthouse" class="lighthouse">
+            <img src="../media/lighthouse.jpg" alt="A white and black striped lighthouse with a wooden brindge path leading towards it surrounded by water and grass" class="lighthouse">
         </div>
     </div>
 
@@ -98,7 +109,7 @@
         </p>
     </div>
     <div class="sideimage2small">
-        <img src="../media/lighthousesmall.jpg" alt="Lighthouse" class="lighthousesmall">
+        <img src="../media/lighthousesmall.jpg" alt="A white and black striped lighthouse with a wooden brindge path leading towards it surrounded by water and grass" class="lighthousesmall">
     </div>
 
     <div class="sidebyside3">
@@ -145,9 +156,9 @@
         </p>
     </div>
 
-    <img src="../media/beach.jpg" alt="Beach" class="beach">
+    <img src="../media/beach.jpg" alt="Beach with whitecaps in the water and houses on the sand dunes looking over the water" class="beach">
 
-    <img src="../media/beachsmall.jpg" alt="Beach" class="beachsmall">
+    <img src="../media/beachsmall.jpg" alt="Beach with whitecaps in the water and houses on the sand dunes looking over the water" class="beachsmall">
 
     <div class="footer">
         <h1>Page 1</h1>

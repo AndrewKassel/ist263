@@ -9,114 +9,244 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700&display=swap" rel="stylesheet">
+    <script>
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if(entry.isIntersecting){
+                    document.querySelectorAll(".fadein")[1].classList.add("fadeIn");
+                }
+            })
+        })
+        
+    </script>
+    <a href="#main" class="skip" tabindex="1">Skip to Content</a><br>
 </head>
 <body>
     <nav class="navigation">
         <div class="obx">OBX</div>
-        <a href="index.html" class="home">Home</a>
-        <a href="local.html">Local Spots<br> and Specialties</a>
-        <a href="nomoney.html">No Money?<br> No Problem</a>
+        <a href="index.html" class="home" tabindex="1">Home</a>
+        <a href="local.html" tabindex="2">Local Spots<br> and Specialties</a>
+        <a href="nomoney.html" tabindex="3">No Money?<br> No Problem</a>
     </nav>
 
-    <div>
+    <nav class="navsmall">
+        <div class="obx">OBX</div>
+        <a href="index.html" class="home" tabindex="2">Home</a>
+        <a href="local.html" tabindex="3">Local Spots<br> and Specialties</a>
+        <a href="nomoney.html" tabindex="4">No Money?<br> No Problem</a>
+    </nav>
+
+    <article class="localcuisine fadein" id="main">
         <h1>Local Cuisine</h1>
         <p>
             OBX is home to many unique and outstanding local restaurants, ranging from seafood, to authentic cuisine from cultures across the world. No matter what kind of food you like, you’ll find something amazing to eat close by.
         </p>
-    </div>
+    </article>
 
-    <div>
+    <article class="localcuisinesmall fadein">
+        <h1>Local Cuisine</h1>
+        <p>
+            OBX is home to many unique and outstanding local restaurants, ranging from seafood, to authentic cuisine from cultures across the world. No matter what kind of food you like, you’ll find something amazing to eat close by.
+        </p>
+    </article>
+
+    <article class="localcuisine2 fadein2">
         <p>
             Some notable spots on the island have even been recognized on the Food Network show, “Diners, Drive- ins, and Dives” by the host of the show, and legendary chef, Guy Fieri. Guy, along with many other locals and visitors highly recommend these restaurants... 
         </p>
-    </div>
+    </article>
 
-    <div>
-        <div>
-            <img src="../media/seafood.jpg" alt="seafood" class="seafood">
+    <article class="localcuisine2small fadein2">
+        <p>
+            Some notable spots on the island have even been recognized on the Food Network show, “Diners, Drive- ins, and Dives” by the host of the show, and legendary chef, Guy Fieri. Guy, along with many other locals and visitors highly recommend these restaurants... 
+        </p>
+    </article>
+
+    <div class="tortugas fadein3">
+        <div class="seafoodimage">
+            <img src="../media/seafood1.jpg" alt="plate of seafood, corn, and sausage on a tray with seasoning">
         </div>
-        <div>
-            <h1>Tortuga's Lie</h1>
+        <div class="seafoodtext">
+            <h1><a href="https://www.tortugaslie.com/" target="_blank" tabindex="5">Tortuga's Lie</a></h1>
             <p>
                 Featured on “Diners, Drive-Ins, and Dives”, Season 0 Episode 20 & Season 16 Episode 12<br>
+                <br>
                 Located in Nags Head, slightly South of Kitty Hawk, Tortuga’s Lie is well known in OBX as a favorite.<br>
+                <br>
                 With great food and a relaxing atmosphere, this restaurant is worth checking out when visiting the Outer Banks.
             </p>
         </div>
     </div>
 
-    <div>
-        <div>
-            <h1>The Black Pelican Oceanfront Restaurant</h1>
+    <div class="seafoodimagesmall fadein3">
+        <img src="../media/seafood1small.jpg" alt="plate of seafood, corn, and sausage on a tray with seasoning">
+    </div>
+    <div class="seafoodtextsmall">
+        <h1><a href="https://www.tortugaslie.com/" target="_blank">Tortuga's Lie</a></h1>
+        <p>
+            Featured on “Diners, Drive-Ins, and Dives”, Season 0 Episode 20 & Season 16 Episode 12<br>
+            <br>
+            Located in Nags Head, slightly South of Kitty Hawk, Tortuga’s Lie is well known in OBX as a favorite.<br>
+            <br>
+            With great food and a relaxing atmosphere, this restaurant is worth checking out when visiting the Outer Banks.
+        </p>
+    </div>
+
+    <div class="pelican">
+        <div class="pelicantext">
+            <h1><a href="https://www.blackpelican.com/" target="_blank">The Black Pelican Oceanfront Restaurant</a></h1>
             <p>
                 Featured on “Diners, Drive-Ins, and Dives”, Season 16 Episode 7<br>
+                <br>
                 The Black Pelican is located in Kitty Hawk, placed right along the beach, serving outstanding seafood, as well as other cuisine that anyone would enjoy. Along side the food, they also have a huge selection of wines from around the globe.<br>
+                <br>
                 I have been here myself in 2019, and the food and atmosphere are amazing. I would highly recommend checking this place out if you get the chance.
             </p>
         </div>
-        <div>
-            <img src="../media/bridge.jpg" alt="Bridge" class="bridge">
+        <div class="pelicanimage">
+            <img src="../media/bridgebig.jpg" alt="small wooden pier looking over the bay area of the outer banks and looking towards inland on the other side">
         </div>
     </div>
 
-    <div>
-        <div>
-            <img src="../media/coastal.jpg" alt="coastal" class="coastal">
+    <div class="pelicanimagesmall">
+        <img src="../media/bridgebigsmall.jpg" alt="small wooden pier looking over the bay area of the outer banks and looking towards inland on the other side">
+    </div>
+    <div class="pelicantextsmall">
+        <h1><a href="https://www.blackpelican.com/" target="_blank">The Black Pelican Oceanfront Restaurant</a></h1>
+        <p>
+            Featured on “Diners, Drive-Ins, and Dives”, Season 16 Episode 7<br>
+            <br>
+            The Black Pelican is located in Kitty Hawk, placed right along the beach, serving outstanding seafood, as well as other cuisine that anyone would enjoy. Along side the food, they also have a huge selection of wines from around the globe.<br>
+            <br>
+            I have been here myself in 2019, and the food and atmosphere are amazing. I would highly recommend checking this place out if you get the chance.
+        </p>
+    </div>
+
+    <div class="cravings">
+        <div class="cravingsimage">
+            <img src="../media/coastal1.jpg" alt="big pot of shrimp and other seafood cooking on the stove">
         </div>
-        <div>
-            <h1>Coastal Cravings</h1>
+        <div class="cravingstext">
+            <h1><a href="https://cravingsobx.com/" target="_blank">Coastal Cravings</a></h1>
             <p>
                 Featured on “Diners, Drive-Ins, and Dives”, Season 16 Episode 3<br>
+                <br>
                 This is an extremely unique spot containing a drive-thru “Pot-to-Go” seafood boil. All you have to do is drive up, grab a massive pot filled with seafood and vegetables, and drive home to enjoy with family and friends.
             </p>
         </div>
     </div>
-
-    <div>
-        <h1>Lesser Known Spots</h1>
+    
+    <div class="cravingsimagesmall">
+        <img src="../media/coastal1small.jpg" alt="big pot of shrimp and other seafood cooking on the stove">
     </div>
-
-    <div>
+    <div class="cravingstextsmall">
+        <h1><a href="https://cravingsobx.com/" target="_blank">Coastal Cravings</a></h1>
         <p>
-            While some people enjoy visiting to the most popular and well known restaurants and shops, local hidden gems are where its at. These not as well known local spots are just as good, and provide an amazing experience in terms of food, quality, and atmosphere.
+            Featured on “Diners, Drive-Ins, and Dives”, Season 16 Episode 3<br>
+            <br>
+            This is an extremely unique spot containing a drive-thru “Pot-to-Go” seafood boil. All you have to do is drive up, grab a massive pot filled with seafood and vegetables, and drive home to enjoy with family and friends.
         </p>
     </div>
 
-    <div>
-        <h1>Uncle Ike's Sandbar and Grill</h1>
+    <article class="lesser">
+        <h1>Lesser Known Spots</h1>
+    </article>
+
+    <article class="lessersmall">
+        <h1>Lesser Known Spots</h1>
+    </article>
+
+    <article class="lessertext">
         <p>
-            Uncle Ike’s is one my favorite restaurants in OBX, offering some of the best food in Corolla. The location is surrounded by shops, and is a short walk from the beach. Its also very close to some of the Major Areas of Exploration I men4oned above.<br>
+            While some people enjoy visiting to the most popular and well known restaurants and shops, local hidden gems are where its at. These not as well known local spots are just as good, and provide an amazing experience in terms of food, quality, and atmosphere.
+        </p>
+    </article>
+
+    <article class="lessertextsmall">
+        <p>
+            While some people enjoy visiting to the most popular and well known restaurants and shops, local hidden gems are where its at. These not as well known local spots are just as good, and provide an amazing experience in terms of food, quality, and atmosphere.
+        </p>
+    </article>
+
+    <div class="ikestext">
+        <h1><a href="https://uncleikesobx.com/" target="_blank">Uncle Ike's Sandbar and Grill</a></h1>
+        <p>
+            Uncle Ike’s is one my favorite restaurants in OBX, offering some of the best food in Corolla. The location is surrounded by shops, and is a short walk from the beach. Its also very close to some of the Major Areas of Exploration mentioned above.<br>
+            <br>
             The service is outstanding, with friendly and funny employees, and is a must visit when staying in Corolla.
         </p>
     </div>
 
-    <a href="https://uncleikesobx.com">
-        <img src="../media/ikes.jpg" alt="Ikes" class="ikes">
+    <div class="ikestextsmall">
+        <h1><a href="https://uncleikesobx.com/" target="_blank">Uncle Ike's Sandbar and Grill</a></h1>
+        <p>
+            Uncle Ike’s is one my favorite restaurants in OBX, offering some of the best food in Corolla. The location is surrounded by shops, and is a short walk from the beach. Its also very close to some of the Major Areas of Exploration mentioned above.<br>
+            <br>
+            The service is outstanding, with friendly and funny employees, and is a must visit when staying in Corolla.
+        </p>
+    </div>
+
+    <a href="https://uncleikesobx.com" target="blank" class="ikesimage">
+        <img src="../media/ikes.jpg" alt="Ikes bar and grill, a restaurant with a bar and coatal decorations. Along with dollar bills hanging from the ceiling">
     </a>
 
-    <div>
-        <h1>Timbuck II</h1>
+    <a href="https://uncleikesobx.com" class="ikesimagesmall">
+        <img src="../media/ikessmall.jpg" alt="Ikes bar and grill, a restaurant with a bar and coatal decorations. Along with dollar bills hanging from the ceiling">
+    </a>
+
+    <div class="timbuck">
+        <h1><a href="https://www.timbuckii.com/" target="_blank">Timbuck II</a></h1>
         <p>
             This outdoor plaza is home to over 60 shops, restaurants, and activities, making it a great spot to spend a few hours when on vacation. Check out North Banks and Okinawa Sushi and Grill while you’re there!
         </p>
     </div>
 
-    <div>
-        <h1>The Waterfront Shops</h1>
+    <div class="timbucksmall">
+        <h1><a href="https://www.timbuckii.com/" target="_blank">Timbuck II</a></h1>
+        <p>
+            This outdoor plaza is home to over 60 shops, restaurants, and activities, making it a great spot to spend a few hours when on vacation. Check out North Banks and Okinawa Sushi and Grill while you’re there!
+        </p>
+    </div>
+
+    <div class="waterfront">
+        <h1><a href="https://www.waterfrontshopsduck.com/" target="_blank">Waterfront Shops</a></h1>
         <p>
             This is another outdoor shopping plaza, but this place is built right along the sound, allowing for a great view of inland North Carolina while you shop.<br>
+            <br>
             Duck’s Cottage is a small coffee shop/book store, serving great coffee and great service.<br>
+            <br>
             Untucked might seem like a normal clothing store, but besides the awesome clothes they sell and amazing deals year round, the owner and employees are some of the nicest people in OBX, and are happy to have a conversation.
         </p>
     </div>
 
-    <div>
+    <div class="waterfrontsmall">
+        <h1><a href="https://www.waterfrontshopsduck.com/" target="_blank">Waterfront Shops</a></h1>
         <p>
-            The Outer Banks is home to so many cool spots, but I highly recommend these places. Don’t be afraid to try other restaurants and shops while you’re there, anywhere you go will be great and give you a true Outer Banks experience.
+            This is another outdoor shopping plaza, but this place is built right along the sound, allowing for a great view of inland North Carolina while you shop.<br>
+            <br>
+            Duck’s Cottage is a small coffee shop/book store, serving great coffee and great service.<br>
+            <br>
+            Untucked might seem like a normal clothing store, but besides the awesome clothes they sell and amazing deals year round, the owner and employees are some of the nicest people in OBX, and are happy to have a conversation.
         </p>
     </div>
 
-    <div>
+    <article class="bottomtext">
+        <p>
+            The Outer Banks is home to so many cool spots, but I highly recommend these places. Don’t be afraid to try other restaurants and shops while you’re there, anywhere you go will be great and give you a true Outer Banks experience.
+        </p>
+    </article>
+
+    <article class="bottomtextsmall">
+        <p>
+            The Outer Banks is home to so many cool spots, but I highly recommend these places. Don’t be afraid to try other restaurants and shops while you’re there, anywhere you go will be great and give you a true Outer Banks experience.
+        </p>
+    </article>
+
+    <div class="footer2">
+        <h1>Page 2</h1>
+    </div>
+
+    <div class="footer2small">
         <h1>Page 2</h1>
     </div>
 

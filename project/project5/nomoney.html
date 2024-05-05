@@ -9,61 +9,131 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700&display=swap" rel="stylesheet">
+    <script>
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if(entry.isIntersecting){
+                    document.querySelectorAll(".fadein")[1].classList.add("fadeIn");
+                }
+            })
+        })
+        
+    </script>
+    <a href="#main" class="skip" tabindex="1">Skip to Content</a><br>
 </head>
 <body>
     <nav class="navigation">
+        <div class="obx">OBX</div>
+        <a href="index.html" class="home" tabindex="2">Home</a>
+        <a href="local.html" tabindex="3">Local Spots<br> and Specialties</a>
+        <a href="nomoney.html" tabindex="4">No Money?<br> No Problem</a>
+    </nav>
+
+    <nav class="navsmall">
         <div class="obx">OBX</div>
         <a href="index.html" class="home">Home</a>
         <a href="local.html">Local Spots<br> and Specialties</a>
         <a href="nomoney.html">No Money?<br> No Problem</a>
     </nav>
 
-    <div>
+    <div class="natural fadein" id="main">
         <h1>Natural Beauty</h1>
         <p>
             With all of the shops, restaurants, and activities to do in OBX, sometimes it feels like you’re missing out on the natural beauty of the area. The Outer Banks has so many cool places to experience, without spending a cent.<br>
+            <br>
             If you’re looking for places like this, try these...
         </p>
     </div>
 
-    <img src="../media/4x4.jpg" alt="4x4" class="4x4">
+    <div class="naturalsmall fadein">
+        <h1>Natural Beauty</h1>
+        <p>
+            With all of the shops, restaurants, and activities to do in OBX, sometimes it feels like you’re missing out on the natural beauty of the area. The Outer Banks has so many cool places to experience, without spending a cent.<br>
+            <br>
+            If you’re looking for places like this, try these...
+        </p>
+    </div>
 
-    <div>
+    <div class="fourbyfour fadein2">
+        <img src="../media/4x4.jpg" alt="Four horses standing on the beach near the water with cars driving past them">
+    </div>
+
+    <div class="fourbyfoursmall fadein2">
+        <img src="../media/4x4small.jpg" alt="Four horses standing on the beach near the water with cars driving past them">
+    </div>
+
+    <div class="fourbyfourtext">
         <h1>4x4 Section</h1>
         <p>
             Deflate your tires and drive up as far north as you can until you reach the 4x4 section in Corolla. You can take a drive right on the beach, passing by houses, lakes, ocean, and even wild horses that live in the area. If you go far enough north, you’ll reach huge sand dunes that look like you’re on a planet from Star Wars.<br>
+            <br>
             This is well worth the effort of making your car 4x4 ready, and is very memorable when spending time with family and friends. Good luck trying to drive your car on the beach somewhere else!
         </p>
     </div>
 
-    <div>
-        <div>
-            <img src="../media/nature.jpg" alt="nature" class="nature">
+    <div class="fourbyfourtextsmall fadein3">
+        <h1>4x4 Section</h1>
+        <p>
+            Deflate your tires and drive up as far north as you can until you reach the 4x4 section in Corolla. You can take a drive right on the beach, passing by houses, lakes, ocean, and even wild horses that live in the area. If you go far enough north, you’ll reach huge sand dunes that look like you’re on a planet from Star Wars.<br>
+            <br>
+            This is well worth the effort of making your car 4x4 ready, and is very memorable when spending time with family and friends. Good luck trying to drive your car on the beach somewhere else!
+        </p>
+    </div>
+
+    <div class="nature">
+        <div class="natureimage">
+            <img src="../media/nature.jpg" alt="Trees and grasses wrapped around some water leading into a bigger pool of water">
         </div>
-        <div>
+        <div class="naturetext">
             <h1>Nature Reserves</h1>
             <p>
                 A few minutes walk from the 4x4 section, the Corolla Nature Reserve takes you on a walk through the woods where you will see deer, as well as other native animals. At the end of the walk, you’ll find yourself at a wooden lookout over the sound, looking out to the mainland.<br>
+                <br>
                 This is a short walk, but well worth it since the end result is a great spot to hang out and get some great pictures and memories. 
             </p>
         </div>
     </div>
 
-    <div>
-        <div>
-            <h1>Wright Brothers National Memorial</h1>
+    <div class="natureimagesmall">
+        <img src="../media/naturesmall.jpg" alt="Trees and grasses wrapped around some water leading into a bigger pool of water">
+    </div>
+    <div class="naturetextsmall">
+        <h1>Nature Reserves</h1>
+        <p>
+            A few minutes walk from the 4x4 section, the Corolla Nature Reserve takes you on a walk through the woods where you will see deer, as well as other native animals. At the end of the walk, you’ll find yourself at a wooden lookout over the sound, looking out to the mainland.<br>
+            <br>
+            This is a short walk, but well worth it since the end result is a great spot to hang out and get some great pictures and memories. 
+        </p>
+    </div>
+
+    <div class="wright">
+        <div class="wrighttext">
+            <h1><a href="https://www.nps.gov/wrbr/index.htm" target="_blank">Wright Brothers National Memorial</a></h1>
             <p>
                 The Wright Brothers achieved the first successful airplane flight in Kitty Hawk, with the area now known as the Wright Brothers National Museum. It contains a huge area full of statues, as well as grassy areas to walk around. If you like history or nature, this is a must visit spot, and knowing the first plane was flown off the ground you’re standing on is pretty awesome.
             </p>
         </div>
-        <div>
-            <img src="../media/wright.jpg" alt="wright" class="wright">        </div>
+        <div class="wrightimage">
+            <img src="../media/wright1.jpg" alt="two horses standing in tall grass with a white bird sitting on top of one of them">       
+        </div>
     </div>
 
-    <div>
-        <div>
-            <img src="../media/ridge.jpg" alt="Jockey's Ridge" class="ridge">        </div>
-        <div>
+    <div class="wrightimagesmall">
+        <img src="../media/wright1small.jpg" alt="two horses standing in tall grass with a white bird sitting on top of one of them">       
+    </div>
+    <div class="wrighttextsmall">
+        <h1><a href="https://www.nps.gov/wrbr/index.htm" target="_blank">Wright Brothers National Memorial</a></h1>
+        <p>
+            The Wright Brothers achieved the first successful airplane flight in Kitty Hawk, with the area now known as the Wright Brothers National Museum. It contains a huge area full of statues, as well as grassy areas to walk around. If you like history or nature, this is a must visit spot, and knowing the first plane was flown off the ground you’re standing on is pretty awesome.
+        </p>
+    </div>
+    
+
+    <div class="jockey">
+        <div class="jockeyimage">
+            <img src="../media/ridge.jpg" alt="Jockey's Ridge state park, a massive sand dune overlooking the bay of the outer banks">        
+        </div>
+        <div class="jockeytext">
             <h1>Jocky's Ridge State Park</h1>
             <p>
                 This state park is, simply put, a massive sand dune that is connected to the sound. Similarly to the 4x4 section, this also makes you feel like you’re on another planet. There’s even hang gliding here, where you can get an immaculate view of the area and the water around you. This is located in Nags Head, south of Kitty Hawk, but is well worth the drive.
@@ -71,13 +141,33 @@
         </div>
     </div>
 
-    <div>
+    <div class="jockeyimagesmall">
+        <img src="../media/ridgesmall.jpg" alt="Jockey's Ridge state park, a massive sand dune overlooking the bay of the outer banks">        
+    </div>
+    <div class="jockeytextsmall">
+        <h1>Jocky's Ridge State Park</h1>
         <p>
-            No matter where you are in the Outer Banks, there is something fun to do or experience. Everywhere you go you are only a few minutes from the beach, and a few minutes from great food and shops. When you visit, go explore the area and see what hidden gems you can find yourself. On your make, make sure to hit some of the places mentioned here, trust me, its worth it.
+            This state park is, simply put, a massive sand dune that is connected to the sound. Similarly to the 4x4 section, this also makes you feel like you’re on another planet. There’s even hang gliding here, where you can get an immaculate view of the area and the water around you. This is located in Nags Head, south of Kitty Hawk, but is well worth the drive.
         </p>
     </div>
 
-    <div>
+    <article class="bottomtext2">
+        <p>
+            No matter where you are in the Outer Banks, there is something fun to do or experience. Everywhere you go you are only a few minutes from the beach, and a few minutes from great food and shops. When you visit, go explore the area and see what hidden gems you can find yourself. On your make, make sure to hit some of the places mentioned here, trust me, its worth it.
+        </p>
+    </article>
+
+    <article class="bottomtext2small">
+        <p>
+            No matter where you are in the Outer Banks, there is something fun to do or experience. Everywhere you go you are only a few minutes from the beach, and a few minutes from great food and shops. When you visit, go explore the area and see what hidden gems you can find yourself. On your make, make sure to hit some of the places mentioned here, trust me, its worth it.
+        </p>
+    </article>
+
+    <div class="footer3"> 
+        <h1>Page 3</h1>
+    </div>
+
+    <div class="footer3small"> 
         <h1>Page 3</h1>
     </div>
     
